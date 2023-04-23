@@ -1,0 +1,37 @@
+openapi: 3.0.1
+info:
+  title: Web Scraper Plugin
+  description: A plugin that allows users to scrape web pages and extract information using ChatGPT.
+  version: 'v1'
+servers:
+  - url: http://127.0.0.1:5000
+paths:
+  /scrape:
+    post:
+      operationId: scrape
+      summary: Scrape a web page and extract information
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                url:
+                  type: string
+                  description: The URL of the web page to be scraped
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/scrapeResponse'
+components:
+  schemas:
+    scrapeResponse:
+      type: object
+      properties:
+        scraped_data:
+          type: string
+          description: The extracted text from the web page
