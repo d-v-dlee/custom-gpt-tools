@@ -31,3 +31,6 @@ Thumbs.db
 
 # venv
 langchain_env/
+
+# test files
+tools/ocr_tools/test_data/*
