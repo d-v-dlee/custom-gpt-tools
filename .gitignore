@@ -30,4 +30,4 @@ htmlcov/
 Thumbs.db
 
 # venv
-langchan_env/
+langchain_env/
