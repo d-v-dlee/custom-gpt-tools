@@ -33,4 +33,4 @@ Thumbs.db
 langchain_env/
 
 # test files
-tools/ocr_tools/test_data/*
+tools/ocr_tool/test_data/*
