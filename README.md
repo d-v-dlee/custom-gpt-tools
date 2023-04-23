@@ -13,6 +13,12 @@ Creating a plugin takes 3 steps:
 ## Tools We've Built
 So far, we have built scraper and OCR tools, and we have more on the way. These tools will serve as examples for how to create custom OpenAI plugins.
 
+
+## Requiremnents
+In addition to pips, had to run:
+- `brew install poppler`
+- `brew install tesseract`
+
 ## References
 Here are some useful references to help you get started:
 
